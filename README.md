@@ -1,2 +1,2 @@
-# PHP
-To add PHP based projects
+# Hotel Snow Gardens
+First project of the Project-Helpers
