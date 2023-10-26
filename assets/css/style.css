@@ -1,0 +1,600 @@
+fonts {
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+colors {
+    background-color: #1797BF;
+    /*main*/
+    background-color: #0D84A9;
+    /*accent*/
+    background-color: #6b6b6b;
+    /*text*/
+    background-color: #1e1e1e;
+    /*footer*/
+    background-color: #f4f4f4;
+    /*light-grey-bg*/
+}
+
+/* body */
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Baloo Da 2', cursive;
+    max-width: 1800px;
+    overflow-x: hidden;
+    
+    
+}
+
+.bg {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 100% auto, 100% auto;
+}
+
+.container {
+    background-color: #413e57;
+    max-width: 6500px;
+}
+
+/* common */
+
+.remove-margin {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.center {
+    text-align: center;
+}
+
+.li-decor {
+    list-style: none;
+}
+
+.overlay{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.overlay::before {
+    content: "";
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    background: black;
+    opacity: 0.9;
+}
+
+.overlay-image{
+    width: 100%;
+    height: 400px;
+}
+
+/* html-elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #e9c56b;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+p{
+    color: rgb(187, 187, 187);
+}
+
+
+/* menubar */
+
+.logo{
+    color: #fff;
+    font-size: 28px;
+
+}
+.navbar{
+    background: black;
+}
+
+.marginLeft {
+    height: 70px;
+    margin-right: 1%;
+    margin-inline: 8%;
+}
+
+.marginLeft a {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+/* CSS for the animated .navbar-brand */
+.logo {
+    font-size: 23px;
+    color: #ff00ff; /* Initial neon color */
+    animation: neonChange 2s infinite alternate; /* Use the 'neonChange' animation */
+}
+
+/* Define the neon color change animation */
+@keyframes neonChange {
+    0% {
+        color: #ff00ff; /* Start with neon color */
+    }
+    50% {
+        color: #00ffff; /* Transition to a different neon color */
+    }
+    100% {
+        color: #ff00ff; /* Return to the original neon color */
+    }
+}
+
+
+
+.marginLeft li {
+	margin-left: 100px;
+}
+
+.marginLeft a:hover {
+    border-bottom: 3px solid;
+    color: darkgoldenrod;
+    transition: .2s ease;
+    
+}
+
+/* slider */
+.slider-container {
+    padding: 0px;
+}
+
+.opacityslider::before{
+content: "";
+display: inline-block;
+height: 700px;
+width: 100%;
+background: black;
+position: absolute;
+z-index: 99;
+opacity: .7;
+}
+
+.img-height {
+    height: 700px;
+}
+
+.previcon{
+    justify-content: end;
+    z-index: 999;
+    height: 50px;
+    width: 40px;
+    background: black;
+    top: 50%;
+}
+
+.nexticon{
+    justify-content: flex-end;
+    z-index: 999;
+    height: 50px;
+    width: 40px;
+    background: black;
+    top: 50%;   
+}
+
+.owl-prev {
+    height: 50px;
+    width: 30px;
+    background: #080808 !important;
+    display: inline-block;
+    position: absolute;
+    top: 140px;
+    color: #fff !important;
+    font-size: 27px !important;
+    opacity: 0.7;
+    border-radius: 4px;
+}
+
+.owl-next {
+    height: 50px;
+    width: 30px;
+    background: #080808 !important;
+    display: inline-block;
+    position: absolute;
+    top: 140px;
+    color: #fff !important;
+    font-size: 27px !important;
+    opacity: 0.7;
+    border-radius: 4px;
+    left: 98%;
+}
+
+.slidertext {
+	top: 35%;
+	position: absolute;
+	z-index: 99;
+    width: 100%;
+    letter-spacing: 15px;
+}
+
+.slidertext h2 {
+	font-size: 48px;
+	color: #848fb0;
+}
+
+.slidertext h1 {
+	color: #99bcf2;
+	font-size: 56px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.slidertext span {
+	color: #4f57c1;
+	font-size: 24px;
+}
+
+
+/* room slider */
+.image {
+    position: relative;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    border: 3px solid black;
+    opacity: 1;
+}
+
+.image__overlay:hover>* {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    transform: translateY(0px);
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.3em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/* room image details */
+
+.taka {
+    font-size: 25px;
+}
+
+.taka-amount {
+    font-size: 50px;
+}
+
+/* gallery */
+.gallery-img-height img {
+    height: 200px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.zoom {
+    transition: transform ease-in-out .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+.zoom img {
+    width: 100%;
+    height: auto;
+}
+
+.zoom img:hover {
+    transform: scale(1.17);
+    border: 2px solid #0D84A9;
+    border-radius: 10px;
+}
+
+/* footer */
+#footer {
+    height: auto;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.footer-text{
+    margin: auto;
+}
+
+#footer p{
+    font-size: 20px;
+}
+
+.logo-img{
+    height: 85px;
+    width: 30%;
+}
+
+
+/* [LIGHTBOX BACKGROUND] */
+#lb-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+#lb-back.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* [LIGHTBOX IMAGE] */
+#lb-img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#lb-img img {
+    /* width, height, max-width, max-height
+       to fit portrait / landscape pictures properly. */
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+
+    /* ALTERNATE EXAMPLE
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto; */
+}
+
+/* places to visit */
+.places img {
+    width: 100%;
+    height: 300px;
+    padding-bottom: 20px;
+}
+
+.places h4 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.places{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* banner */
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-overlay h2 {
+    color: #99bcf2;
+    font-size: 83px;
+}
+
+.banner-overlay p {
+    color: #99bcf2;
+    font-size: 30px;
+}
+
+/* forms */
+.forms input,
+textarea {
+    margin-bottom: 10px;
+}
+
+/* about us in index */
+
+.about-overlay {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+
+.about-overlay h3{
+    font-size: 30px;
+    color: #fff;
+    font-style: italic;
+}
+
+.about-overlay h2{
+    font-size: 65px;
+    color: #fff;
+    font-style: italic;
+}
+
+.about-overlay p{
+    font-size: 35px;
+    color: #fff;
+    font-style: italic;
+}
+
+
+/* .about_text h3 {
+    top: -342px;
+    position: absolute;
+    font-size: 29px;
+    color: #fff;
+    font-style: italic;
+    width: 629px;
+    left: 175px;
+}
+
+
+.about_text h2 {
+    top: -254px;
+    position: absolute;
+    color: #fff;
+    font-style: italic;
+    width: 629px;
+    left: 175px;
+    font-size: 63px;
+}
+
+.about_text span {
+    top: -157px;
+    position: absolute;
+    color: #fff;
+    font-style: italic;
+    width: 629px;
+    left: 175px;
+    font-size: 36px;
+}
+
+.about_right p {
+    top: -335px;
+    position: absolute;
+    color: #fff;
+    font-style: italic;
+    width: 450px;
+    left: 982px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.bord {
+    content: '';
+    height: 3px;
+    width: 200px;
+    background: #fff;
+    top: -289px;
+    position: absolute;
+    left: 386px;
+}*/
+
+/* booking button */
+.booking-button {
+    height: 50px;
+    width: 150px;
+    background-color: #102957da;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    
+}
+
+.booking-button:hover {
+    background-color: #1684a5;
+    color: white;
+    transform: scale(1.17);
+}
+
+
+/* rooms */
+.master-room {
+	margin-left: 42%;
+}
+
+.borderrr {
+	border-bottom: 5px solid;
+	width: 250px;
+    font-size: 35px;
+	line-height: 50px;
+	font-style: italic;
+	font-weight: 600;
+	color: #f6b413;
+}
+
+.room_title {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.room_underline {
+    height: 3px;
+    width: 465px;
+    background: #868181;
+    margin-bottom: 35px;
+}
+
+.room_description {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.room_acc {
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.pricing {
+    font-style: italic;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.pricing_balance {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+
+
+
+/* admin */
+
+
+
+
+
+/* responsive */
+@media only screen and (max-width: 1400px) {
+    body {
+        max-width: 1200px;
+    }
+}
+

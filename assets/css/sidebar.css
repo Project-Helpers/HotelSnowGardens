@@ -1,0 +1,80 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+
+  .sidebar {
+    background-color: #333333;
+    color: white;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    max-width: 250px;
+    overflow-y: auto;
+  }
+  
+  #fixed-sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333333;
+    color: #333333;
+    /* border-right: 1px solid #d1d2d3; */ /* Remove or comment out this line */
+    z-index: 100;
+    overflow-y: auto;
+  }
+
+  #list-color{
+    color: rgb(138, 138, 239);
+  }
+  
+  /* Add this CSS to make the "Welcome" link blink */
+.blink {
+    animation: blinker 1s linear infinite;
+    font-size: 20px;
+    
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .custom-list {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .custom-list li {
+    list-style: none;
+  }
+  
+  .custom-list li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .custom-list li a:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* Add this CSS to style the star icon and remove text decoration when the link is active */
+ul.custom-list li::before {
+    content: "\2605";
+    margin-right: 5px;
+    color: rgb(138, 138, 239);
+}
+
+/* Hide for mobile, show later */
+
+
+  
+  
