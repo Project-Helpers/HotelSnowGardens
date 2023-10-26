@@ -1,0 +1,86 @@
+/* style1.css */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Page header styles */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid #333;
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.table th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Table of Contents styles */
+.toc {
+    float: right;
+    width: 30%;
+}
+
+.toc h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.toc ul li {
+    margin-bottom: 5px;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+}
+
+a.view-link {
+    color: purple;
+}
+
+a.edit-link {
+    color: green;
+}
+
+a.delete-link {
+    color: red;
+}
+
+
