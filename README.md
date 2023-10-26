@@ -1,2 +1,2 @@
 # Hotel Snow Gardens
-First project of the Project-Helpers
+The first project of the Project-Helpers
